@@ -1,0 +1,22 @@
+{% load i18n %}
+{% load compress %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ settings.PRETIX_INSTANCE_NAME }}</title>
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-scss" href="{% static "pretixpresale/scss/index.scss" %}"/>
+    {% endcompress %}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Eventbillet</h1>
+    </div>
+  </body>
+</html>
+
+{# Local Variables: #}
+{# mode: django-html #}
+{# End: #}
